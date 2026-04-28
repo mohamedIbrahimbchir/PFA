@@ -3,9 +3,17 @@
 #include <Wire.h>
 #include <RTClib.h>
 #include <esp_task_wdt.h>
-#include "secrets.h"
 
 // ── WiFi ──────────────────────────────────────────────────────────────────────
+#define WIFI_SSID     "your-wifi-name"
+#define WIFI_PASSWORD "your-wifi-password"
+
+// ── Firebase ──────────────────────────────────────────────────────────────────
+#define API_KEY       "your-firebase-api-key"
+#define DATABASE_URL  "https://your-project-default-rtdb.region.firebasedatabase.app"
+#define USER_EMAIL    "your-firebase-user@example.com"
+#define USER_PASSWORD "your-firebase-user-password"
+
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;

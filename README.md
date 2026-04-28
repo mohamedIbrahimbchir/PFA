@@ -36,7 +36,7 @@ The ESP32 reads those commands and controls the relay/motor.
 ## Real Hardware Run
 
 1. Open `arduino/irrigation_system.ino` in Arduino IDE.
-2. Copy `arduino/secrets.example.h` to `arduino/secrets.h` and fill in your local WiFi and Firebase credentials.
+2. Replace the placeholder WiFi and Firebase values at the top of the sketch with your own credentials.
 3. Select the ESP32 board and port.
 4. Upload the sketch to the ESP32.
 5. Open Serial Monitor at `115200`.
@@ -94,10 +94,7 @@ Stop it before testing the real ESP32.
 
 ## Publish To GitHub
 
-This project is ready to be pushed to GitHub with local secrets excluded.
-
-1. Make sure `arduino/secrets.h` stays local and is not committed.
-2. From the `PFA/` folder, initialize git:
+From the `PFA/` folder, initialize git:
 
 ```bash
 git init -b main
@@ -105,8 +102,8 @@ git add .
 git commit -m "Initial commit"
 ```
 
-3. Create a new empty repository on GitHub, for example `solar-irrigation-system`.
-4. Connect your local repo to GitHub and push:
+Create a new empty repository on GitHub, for example `solar-irrigation-system`.
+Connect your local repo to GitHub and push:
 
 ```bash
 git remote add origin https://github.com/YOUR_USERNAME/solar-irrigation-system.git

@@ -19,9 +19,6 @@ pnpm-debug.log*
 .env.*
 !.env.example
 
-# Arduino local secrets
-arduino/secrets.h
-
 # OS/editor noise
 .DS_Store
 Thumbs.db
