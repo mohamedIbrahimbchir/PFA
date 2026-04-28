@@ -1,0 +1,16 @@
+{
+  "name": "pfa-firebase-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firebase Realtime Database simulator for the solar irrigation dashboard.",
+  "main": "esp32Simulator.js",
+  "scripts": {
+    "start": "node esp32Simulator.js",
+    "once": "node esp32Simulator.js --once",
+    "device": "node deviceSimulator.js",
+    "check": "node --check firebaseClient.js && node --check simulatorCore.js && node --check esp32Simulator.js && node --check deviceSimulator.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
