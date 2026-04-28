@@ -91,23 +91,3 @@ npm.cmd start
 ```
 
 Stop it before testing the real ESP32.
-
-## Publish To GitHub
-
-From the `PFA/` folder, initialize git:
-
-```bash
-git init -b main
-git add .
-git commit -m "Initial commit"
-```
-
-Create a new empty repository on GitHub, for example `solar-irrigation-system`.
-Connect your local repo to GitHub and push:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/solar-irrigation-system.git
-git push -u origin main
-```
-
-If you use GitHub Desktop or VS Code, you can do the same steps with the UI after the local git repo is initialized.
